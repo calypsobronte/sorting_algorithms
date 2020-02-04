@@ -8,15 +8,16 @@
  */
 void selection_sort(int *array, size_t size)
 {
+size_t i = 0, j = 0;
 int tmp, tmp_2;
 if (!array)
 {
 return;
 }
-for (size_t i = 0; i < size - 1; i++)
+for (i = 0; i < size - 1; i++)
 {
 tmp = i;
-for (size_t j = i + 1; j < size; j++)
+for (j = i + 1; j < size; j++)
 {
 if (array[j] < array[tmp])
 {
