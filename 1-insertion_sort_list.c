@@ -23,7 +23,7 @@ next_node->next->prev = next_node->prev;
 }
 next_node->next = next_node->prev;
 next_node->prev = next_node->prev->prev;
-next_node->prev->next = next_node;
+next_node->next->prev = next_node;
 if (next_node->prev == NULL)
 {
 *list = next_node;
