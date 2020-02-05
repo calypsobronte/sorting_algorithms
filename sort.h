@@ -23,5 +23,8 @@ void print_list(const listint_t *list);
 void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
 void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
+void quicksort(int *array, int left, int right, size_t size);
+void partition(int *left, int *right, int *array, size_t size);
 
 #endif /* Libraries Big 0 and Sorting algorithms */
